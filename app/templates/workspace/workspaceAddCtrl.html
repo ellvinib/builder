@@ -1,0 +1,18 @@
+<div ng-if="ctrl.loading"><div class="loader-lg">Loading...</div></div>
+<div ng-if="!ctrl.loading">
+    <form name="ctrl.form">
+        <div class="form-group">
+            <label for="workspace">Name workspace</label>
+            <div class="validation">
+                <input type="text" workspace-exist ng-model="ctrl.name" name="workspace" id="workspace" placeholder="name" required>
+            </div>
+            <div data-ng-if="ctrl.form.$invalid">
+                <span class="text-danger" data-ng-show="ctrl.form.$error.workspace">This name is already in use.</span>
+            </div>
+        </div>
+        <span>
+            <button type="button" ng-click="ctrl.cancel()" class="btn-danger">Cancel</button>
+            <button type="button" ng-disabled="ctrl.form.$invalid" ng-click="ctrl.addWorkspaces(ctrl.name)" class="btn-success">Add</button>
+        </span>
+    </form>
+</div>

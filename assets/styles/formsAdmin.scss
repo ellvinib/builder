@@ -1,0 +1,279 @@
+.logo {
+  width: 150px;
+}
+
+.debug-output {
+  margin-top: 25px;
+}
+ul.debug li span {
+  font-weight: bold;
+}
+
+.fr-form {
+  margin-bottom: 25px;
+}
+
+.fr-form-tabs {}
+
+.fr-form-tabs ul {
+  margin: 0px;
+  padding: 0px;
+  background: #f8f8f8;
+}
+.fr-form-tabs ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 25px;
+  position: relative;
+  padding: 15px;
+  padding-right: 15px;
+}
+.fr-form-tabs ul.disabled li .fr-step-navigation-title,
+.fr-form-tabs ul li a {
+  color: #CCC;
+}
+.fr-form-tabs ul.disabled li.active .fr-step-navigation-title,
+.fr-form-tabs ul li.active a {
+  color: white;
+  font-weight: bold;
+}
+.fr-form-tabs ul.disabled li.done .fr-step-navigation-title,
+.fr-form-tabs ul li.done a {
+  color: white;
+}
+.fr-form-tabs ul li.active { background: #CCC; }
+.fr-form-tabs ul li.active:after { border-left-color: #CCC; }
+.fr-form-tabs ul li.done { background: #CCC; }
+.fr-form-tabs ul li.done:after { border-left-color: #CCC; background: #CCC; }
+
+.fr-form-tabs ul li:after {
+  content: '';
+  border-top:25px solid transparent;
+  border-bottom:25px solid transparent;
+  border-left:25px solid #f8f8f8;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  right: -25px;
+}
+
+.fr-form-tabs-progress {
+  background: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.fr-field-wrapper {
+  margin: 20px 0px 20px 10px;
+}
+
+.fr-form-nav button {
+  border: 1px solid #999;
+  background: #CCC;
+  color: #333;
+}
+
+.fr-form-nav button:disabled {
+  background: #ebebeb;
+  border: solid 1px #CCC;
+  color: #CCC;
+}
+
+.fr-form-nav {
+  padding: 20px 0px 0px 0px;
+}
+
+.fr-form-nav-previous {
+
+}
+
+.fr-form-nav-next,
+.fr-form-nav-save {
+  float: right;
+}
+
+.fr-form-section {
+  padding-top: 15px;
+  border-bottom: 1px solid #CCC;
+}
+
+.fr-form-step:last-child {
+  border-bottom: 0px solid white;
+}
+
+.fr-form-step {
+  border-bottom: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.fr-form-section-title {
+  font-weight: bold;
+}
+
+.fr-form-section-subtitle {
+  font-weight: bold;
+  color: gray;
+
+}
+
+.fr-form-step-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.fr-form-step-subtitle {
+  color: gray;
+  font-style: italic;
+}
+
+.status {
+  position: absolute;
+  top: 50px;
+  left: 5px;
+}
+
+.status-0 {
+  background: #008000;
+}
+.status-1 {
+  background: #FFA500;
+}
+.status-2 {
+  background: #ADD8E6;
+}
+
+.fr-debug {
+  background: #FFFFE0;
+  border: 1px solid #DAA520;
+  color: #B48000;
+  padding: 10px;
+}
+
+.fr-debug-head {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.fr-debug-close {
+  float: right;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0px 6px;
+}
+
+.fr-debug-close:hover {
+  background: #B48000;
+  color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.fr-debug-body {
+  padding: 10px;
+}
+
+.fr-debug-body ul {
+  padding-left: 5px;
+}
+.fr-debug-body ul li {
+  font-weight: bold;
+  list-style-type: none;
+  margin-left: 0px;
+}
+.fr-debug-body ul span {
+  display: inline-block;
+  width: 40%;
+  font-weight: normal;
+}
+
+.fr-debug-body pre {
+  background: #FFFFE0;
+  border: 1px solid #DAA520;
+  color: #B48000;
+}
+
+.fr-debug-body .col {
+  width: 50%;
+  float: left;
+}
+
+.fr-debug-body .clear {
+  clear: both;
+}
+
+
+.fr-extraInfo {
+  margin-top: 10px;
+  background: #d9edf7;
+  border: 1px solid #bce8f1;
+  color: #31708f;
+  padding: 20px;
+}
+
+.fr-form-viewer .fr-form-step {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #CCC;
+}
+.fr-form-viewer .fr-form-section {
+  margin-top: 20px;
+  padding: 10px;
+  border-bottom: none;
+  border-left: 5px solid #CDCDCD;
+}
+
+.panel-group {
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.editModeTests label {
+  width: 45%;
+}
+
+.editModeTests .fr-field-state-read-wrapper {
+  font-style: italic;
+  color: gray;
+  display: inline-block;
+}
+
+.editModeTests .fr-field-state-read-wrapper a {
+  font-style: normal;
+}
+
+.editModeTests .fr-field-state-write-wrapper {
+  position: static;
+  display: inline-block;
+  width: 48%;
+}
+
+.editModeTests .fr-field-state-read-wrapper a,
+.editModeTests .fr-field-state-write-wrapper a {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.editModeTests .panel-heading, .editModeTests .panel-body, .editModeTests .panel-body p, .editModeTests .panel-group {
+  background: #EEE;
+  font-size: 12px;
+  margin: 0;
+}
+.editModeTests .fr-form-section {
+  padding: 10px;
+  border-bottom: none;
+  background: #CCC;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.editModeTests small {
+  width: 50%;
+  margin-left: 46%;
+  color: #666;
+}

@@ -1,0 +1,104 @@
+.add-form{
+    background: cadetblue;
+    height:200px;
+    
+    .plus{
+        &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em; /* Adjusts for spacing */
+        
+        }        
+        text-align: center;
+        height: 80%;
+        position: relative;
+        i.fa{
+            font-size:60px;
+            color:white;
+            display: inline-block;
+            vertical-align: middle;
+            width: 60px;
+        }
+    }
+     
+    
+    .text{
+    text-align:center;
+    }
+}
+
+.add-workspace{
+    padding-left:5px;
+    font-size: 16px;
+    &:hover{
+        color:blue;
+        cursor: pointer;
+    }
+}
+
+
+.card{
+    text-align: center;
+    border-color: white;
+    box-shadow: none;
+    cursor:pointer;
+    .removeCard{
+        visibility: hidden;
+        cursor: default;
+    }
+    &:hover{
+        .card-select{
+            label{
+                visibility: visible;
+            }
+        }
+        .removeCard{
+            visibility: visible;
+            i{
+                padding:5px;
+                cursor:pointer;
+                &:hover{
+                    background: lightgray;                   
+                }
+            }            
+        }
+    }
+}
+
+.search-field{
+    margin:auto;
+    background: lightgray;
+    padding:5px;
+    text-align: center;
+    margin-bottom:10px;
+    box-shadow: 2px 2px grey;
+    input{
+        width:auto;
+        margin: auto;
+    }
+}
+
+.bar.search{
+    background:lightblue;
+    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.2);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.2);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.2);
+    margin-bottom:15px;
+    padding-bottom:10px;
+    padding-left:25px;
+}
+
+.card-select{
+    label{
+        position: absolute !important;
+        left: 20px;
+        width: 20px;
+        visibility: hidden;
+    }
+    input[type=checkbox]:checked + label {
+        visibility: visible;
+    } 
+    
+}

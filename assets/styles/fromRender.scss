@@ -1,0 +1,91 @@
+.fr-form-hide{
+ .fr-form-nav-save{
+     display:none !important;
+ }   
+}
+
+.extra-modal-content{
+    height: 100%;
+    width:100%;
+    max-width:90%;
+    
+    .card{
+        height: 100%;
+        .card-heading{
+            display: block;
+        }
+        .card-body{
+            background:white;
+        }
+        
+    }
+}
+
+.extra-modal-dialog{
+    height: 90%;
+    width:100%;
+    max-width: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+  
+   .modal-dialog + .go-big  {
+        height: 90%;
+        width:100%;
+        max-width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+.onoffswitch {
+    position: relative;
+    user-select:none;
+    width: rem(60);
+}
+
+input[type="checkbox"].onoffswitch-checkbox {
+  + label.onoffswitch-label {
+    border: 1px solid 5px;
+    border-radius: rem(30);
+    cursor: pointer;
+    display: block;
+    height: rem(30);
+    transition: background (0.5*2) ease-in;
+
+    &:before {
+      border-radius: rem(30);
+      height: rem(30);
+      left: -1px;
+      padding: 0;
+      top: -1px;
+      transition: margin-left (0.5*2) ease-in;
+      width: rem(30);
+    }
+  }
+
+  &:checked {
+    + label.onoffswitch-label {
+      background: green;
+
+      &:before {
+        margin-left: rem(30);
+      }
+      &:after {
+        content: none;
+      }
+    }
+  }
+}
+
+.field-renderer{
+    [fr-form-tabs],.fr-form-nav-next,.fr-form-nav-previous,.fr-form-nav-save{
+        display: none;
+    }
+}
+.padding-go {
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 50px;
+}
